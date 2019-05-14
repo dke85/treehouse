@@ -1,0 +1,156 @@
+/* ================================= 
+  Base Element Styles
+==================================== */
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Varela Round', sans-serif;
+	line-height: 1.6;
+	color: #3a3a3a;
+}
+
+p {
+	font-size: .95em;
+	margin-bottom: 1.8em;
+}
+
+h2,
+h3,
+a {
+	color: #093a58;
+}
+
+h2,
+h3 {
+	margin-top: 0;
+}
+
+a {
+	text-decoration: none;
+}
+
+img {
+	max-width: 100%;
+}
+
+/* ================================= 
+  Base Layout Styles
+==================================== */
+
+/* ---- Navigation ---- */
+
+.name {
+	font-size: 1.25em;
+}
+
+.name a,
+.main-nav a {
+	text-align: center;
+}
+
+.main-nav a {
+	font-size: .95em;
+	color: #3acec2;
+	text-transform: uppercase;
+}
+
+.main-nav a:hover {
+	color: #093a58;
+}
+.container .main-header, .container .main-nav{
+	text-align: center;
+}
+/* ---- Layout Containers ---- */
+
+.banner {
+	color: #fff;
+	background: #3acec2;
+	text-align: center;
+	padding: .5em;
+	margin-bottom: 60px;
+}
+
+.main-footer {
+	background: #d9e4ea;
+	padding: 2em 0;
+	margin-top: 30px;
+	text-align: center;
+}
+
+/* ---- Page Elements ---- */
+
+.logo {
+	width: 190px;
+}
+
+/* ================================= 
+  Media Queries
+==================================== */
+
+@media (min-width: 769px) {
+
+	.main-nav{
+		float: right;
+		width: 80%;
+	}
+	
+	.main-nav li {
+		float: right;
+		margin: 1em;
+		vertical-align: middle;
+	}
+
+	.name {
+		float: left;
+		width: 20%;
+	}
+
+	.col {
+		float: left;
+		padding-left: 1em;
+	}
+
+	.primary {
+		width: 40%;
+		padding: 0 1em;
+	}
+
+	.secondary {
+		width: 30%;
+	}
+
+	.tertiary {
+		width: 30%;
+		clear: both;
+	}
+
+	.tagline {
+		font-size: 1.4em;
+	}
+
+	/* ---- Float clearfix ---- */
+
+	.clearfix::after {
+		content: " ";
+		display: table;
+		clear: both;
+	}
+
+}
+
+@media (min-width: 1025px){
+
+	.tertiary {
+		float: left;
+		clear: none;
+	}
+
+	.content {
+		width: 80%;
+		margin: 0 auto;
+		max-width: 1150px;
+	}
+}
